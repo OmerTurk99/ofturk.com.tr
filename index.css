@@ -599,6 +599,31 @@ a {
     width: 0; /* Animated via JS or static inline style */
 }
 
+.skill-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.8rem;
+}
+
+.skill-tags span {
+    background: rgba(184, 115, 240, 0.05);
+    border: 1px solid rgba(184, 115, 240, 0.1);
+    color: var(--text-secondary);
+    padding: 6px 14px;
+    border-radius: 8px;
+    font-size: 0.85rem;
+    font-weight: 500;
+    transition: var(--trans-fast);
+}
+
+.skill-tags span:hover {
+    background: rgba(184, 115, 240, 0.15);
+    border-color: var(--accent-color);
+    color: var(--text-primary);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px var(--accent-glow);
+}
+
 /* Projects Section */
 .projects-grid {
     display: grid;

@@ -28,7 +28,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     // Typing Effect for Professions
-    const texts = ['Yazılımcı.', 'E-Ticaret Uzmanı.', 'Müzisyen.', 'Yazar.'];
+    const texts = ['AI-Augmented Developer.', 'Python Specialist.', 'Automation Builder.', 'LLM Integrator.'];
     let count = 0;
     let index = 0;
     let currentText = '';
