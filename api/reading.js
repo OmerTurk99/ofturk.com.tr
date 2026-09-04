@@ -88,13 +88,41 @@ module.exports = async function handler(request, response) {
         text: { format: { type: 'json_schema', name: 'tarot_reading', strict: true, schema: responseSchema } }
       })
     });
-    if (!openAiResponse.ok) return fail(response, 502, 'AI_PROVIDER_ERROR', 'Reading service unavailable');
-    const result = await openAiResponse.json();
+    if (!openAiResponse.ok) {
+      let providerError = {};
+      try {
+        const errorBody = await openAiResponse.json();
+        providerError = errorBody?.error || {};
+      } catch (error) {
+        console.error('[Tarot Reading] OpenAI error response was not valid JSON', {
+          status: openAiResponse.status,
+          parseError: error instanceof Error ? error.message : 'Unknown parse error'
+        });
+      }
+      console.error('[Tarot Reading] OpenAI request failed', {
+        status: openAiResponse.status,
+        code: typeof providerError.code === 'string' ? providerError.code : undefined,
+        type: typeof providerError.type === 'string' ? providerError.type : undefined,
+        message: typeof providerError.message === 'string' ? providerError.message : undefined
+      });
+      return fail(response, 502, 'AI_PROVIDER_ERROR', 'Reading service unavailable');
+    }
+    let result;
+    try {
+      result = await openAiResponse.json();
+    } catch (error) {
+      console.error('[Tarot Reading] OpenAI success response was not valid JSON', {
+        status: openAiResponse.status,
+        parseError: error instanceof Error ? error.message : 'Unknown parse error'
+      });
+      return fail(response, 502, 'AI_PROVIDER_ERROR', 'Reading service unavailable');
+    }
     const content = result.output_text || result.output?.flatMap(item => item.content || []).find(item => item.type === 'output_text')?.text;
     const reading = JSON.parse(content || '{}');
     if (!reading || typeof reading.overall !== 'string' || !Array.isArray(reading.cardReadings) || reading.cardReadings.length !== request.body.spread.count || typeof reading.advice !== 'string') return fail(response, 502, 'AI_INVALID_RESPONSE', 'Reading service unavailable');
     return sendJson(response, 200, reading);
-  } catch {
+  } catch (error) {
+    console.error('[Tarot Reading]', error);
     return fail(response, 502, 'AI_PROVIDER_ERROR', 'Reading service unavailable');
   }
 };
