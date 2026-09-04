@@ -1,0 +1,6 @@
+# Local secrets and deployment output
+.env
+.env.*
+!.env.example
+.vercel
+node_modules

@@ -1,271 +1,29 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="tr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Ömer Faruk Türk - Dijital Özgeçmiş ve Portfolyo">
-    <title>Ömer Faruk Türk | Kreatif Özgeçmiş</title>
-    
-    <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
-    
-    <!-- Custom CSS -->
-    <link rel="stylesheet" href="index.css">
-    
-    <!-- FontAwesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="OFTURK Tarot: sakin, modern ve mistik bir online tarot deneyimi.">
+<meta property="og:title" content="OFTURK Tarot | İçindeki hikâyeyi dinle">
+<meta property="og:description" content="Kartlarını seç, açılımını belirle ve içindeki hikâyeyi dinle.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://ofturk.com.tr">
+<title>OFTURK Tarot | İçindeki hikâyeyi dinle</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="index.css">
 </head>
 <body>
-    <!-- Background Animation Elements -->
-    <div class="blob blob-1"></div>
-    <div class="blob blob-2"></div>
-
-    <!-- Navigation -->
-    <nav class="navbar">
-        <div class="nav-content">
-            <a href="#" class="logo">OFTURK<span>.</span></a>
-            <ul class="nav-links">
-                <li><a href="#about">Hakkımda</a></li>
-                <li><a href="#experience">Deneyim</a></li>
-                <li><a href="#skills">Yetenekler</a></li>
-                <li><a href="#projects">Projeler</a></li>
-                <li><a href="#contact" class="btn-primary-sm">İletişime Geç</a></li>
-            </ul>
-        </div>
-    </nav>
-
-    <!-- Hero Section -->
-    <section id="hero" class="hero section">
-        <div class="hero-container">
-            <div class="hero-content reveal">
-                <span class="badge">Merhaba, ben</span>
-                <h1 class="hero-title">
-                    Ömer Faruk <span class="highlight">TÜRK</span>
-                </h1>
-                <h2 class="hero-subtitle">
-                    Ben bir <span class="typing-text"></span>
-                </h2>
-                <p class="hero-desc">
-                    AI-Augmented Developer | Building Automation & AI-Driven Systems
-                </p>
-                <div class="hero-actions">
-                    <a href="#projects" class="btn-primary">Projelerimi Gör</a>
-                    <a href="#contact" class="btn-secondary">Özgeçmiş İndir</a>
-                </div>
-                <div class="social-links">
-                    <a href="https://github.com/OmerTurk99" target="_blank"><i class="fab fa-github"></i></a>
-                    <a href="https://www.linkedin.com/in/%C3%B6mer-t%C3%BCrk-a1a87732a/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
-                </div>
-            </div>
-            <div class="hero-image-container reveal-right">
-                <div class="glass-card image-card" style="padding: 0; overflow: hidden; display: flex; align-items: center; justify-content: center; position: relative; width: 350px; height: 350px; border-radius: 50%;">
-                    <img src="görsel.png" alt="Ömer Faruk Türk" style="width: 100%; height: 100%; object-fit: cover; object-position: top;">
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- About Section -->
-    <section id="about" class="about section">
-        <div class="section-header reveal">
-            <h2 class="section-title">Hakkımda</h2>
-            <div class="line"></div>
-        </div>
-        <div class="about-content reveal-up">
-            <div class="glass-card about-card" style="min-height: 200px; display: flex; flex-direction: column; gap: 1.5rem; padding: 2.5rem;">
-                <p style="color: var(--text-primary); font-size: 1.1rem; line-height: 1.8;">
-                    Python tabanlı otomasyon ve yapay zeka entegreli arka uç (backend) sistemleri geliştiriyorum. Çalışmalarım; LLM entegrasyonu, veri işleme, web kazıma ve gerçek iş problemlerini çözen üretime hazır iş akışları oluşturmaya odaklanmaktadır.
-                </p>
-                <p style="color: var(--text-primary); font-size: 1.1rem; line-height: 1.8;">
-                    Deneysel prototipler yerine; hata giderme mekanizmaları, doğrulama katmanları ve ölçülebilir çıktılara sahip yapılandırılmış, güvenilir sistemler tasarlıyorum. Verimliliği artırmak ve ölçeklenebilir çözümler sunmak için yapay zeka araçlarını geliştirme süreçlerine entegre ediyorum.
-                </p>
-                <p style="color: var(--text-primary); font-size: 1.1rem; line-height: 1.8;">
-                    Teknik odak noktalarım arasında arka uç geliştirme, API entegrasyonları, eşleştirme algoritmaları, veri zenginleştirme iş akışları ve yapay zeka destekli içerik oluşturma sistemleri yer almaktadır.
-                </p>
-                <div style="margin-top: 1rem; padding-top: 1rem; border-top: 1px solid var(--glass-border);">
-                    <h4 style="color: var(--primary-light); margin-bottom: 0.5rem;"><i class="fas fa-bullseye" style="margin-right: 10px;"></i>🎯 Hedef</h4>
-                    <p style="color: var(--text-secondary); font-style: italic;">İyi tasarlanmış sistemlerin ölçülebilir iş değeri yarattığı otomasyon ve yapay zeka odaklı projelere katkıda bulunmak.</p>
-                </div>
-            </div>
-            <div class="stats-container">
-                <div class="stat-item glass-card reveal-up delay-1">
-                    <h3>2024</h3>
-                    <span>Mezuniyet Yılı</span>
-                </div>
-                <div class="stat-item glass-card reveal-up delay-2">
-                    <h3>Yazılım<br>& Veri</h3>
-                    <span>Ana Uzmanlık</span>
-                </div>
-                <div class="stat-item glass-card reveal-up delay-3">
-                    <h3>Analitik</h3>
-                    <span>Çözümler</span>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Experience Section -->
-    <section id="experience" class="experience section">
-        <div class="section-header reveal">
-            <h2 class="section-title">Deneyim <span class="highlight">&</span> Eğitim</h2>
-            <div class="line"></div>
-        </div>
-        <div class="timeline reveal-up">
-            <div class="timeline-item glass-card">
-                <div class="timeline-dot"></div>
-                <div class="timeline-date">2026.01 - 2026.03</div>
-                <h3 class="timeline-title">E-Ticaret Personeli</h3>
-                <h4 class="timeline-company">Yiğit AVM</h4>
-                <p>E-ticaret süreçlerinin yönetilmesi ve dijital mağaza operasyonlarının yürütülmesi.</p>
-            </div>
-            <div class="timeline-item glass-card">
-                <div class="timeline-dot"></div>
-                <div class="timeline-date">2019 - 2024</div>
-                <h3 class="timeline-title">Yönetim Bilişim Sistemleri (Lisans)</h3>
-                <h4 class="timeline-company">İstanbul Üniversitesi</h4>
-                <p>İşletme ve bilişim sistemleri, veri analizi, süreç yönetimi ve algoritmik düşünce üzerine uzmanlaşma.</p>
-            </div>
-        </div>
-    </section>
-
-    <!-- Skills Section -->
-    <section id="skills" class="skills section">
-        <div class="section-header reveal">
-            <h2 class="section-title">Uzmanlık <span class="highlight">Yetenekleri</span></h2>
-            <div class="line"></div>
-        </div>
-        <div class="skills-grid reveal-up">
-            
-            <div class="skill-category glass-card">
-                <h3><i class="fas fa-robot"></i> AI & Automation</h3>
-                <div class="skill-tags">
-                    <span>Artificial Intelligence (AI)</span>
-                    <span>Large Language Models (LLM)</span>
-                    <span>AI Integration</span>
-                    <span>Prompt Engineering</span>
-                    <span>Automation</span>
-                    <span>NLP (Basic)</span>
-                </div>
-            </div>
-
-            <div class="skill-category glass-card reveal-up delay-1">
-                <h3><i class="fas fa-server"></i> Backend & APIs</h3>
-                <div class="skill-tags">
-                    <span>Python</span>
-                    <span>Flask</span>
-                    <span>Backend Development</span>
-                    <span>REST APIs</span>
-                    <span>HTTP APIs</span>
-                    <span>API Development</span>
-                </div>
-            </div>
-
-            <div class="skill-category glass-card reveal-up delay-2">
-                <h3><i class="fas fa-database"></i> Data & Engineering</h3>
-                <div class="skill-tags">
-                    <span>Web Scraping</span>
-                    <span>Playwright</span>
-                    <span>Data Processing</span>
-                    <span>Data Enrichment</span>
-                    <span>NumPy / Pandas</span>
-                    <span>JSON Processing</span>
-                    <span>SQLite / Relational Databases</span>
-                    <span>RapidFuzz</span>
-                    <span>Git</span>
-                    <span>System Design (Basic)</span>
-                </div>
-            </div>
-
-        </div>
-    </section>
-
-    <!-- Projects Section -->
-    <section id="projects" class="projects section">
-        <div class="section-header reveal">
-            <h2 class="section-title">Seçkin <span class="highlight">Projeler</span></h2>
-            <div class="line"></div>
-        </div>
-        <div class="projects-grid reveal-up">
-            <div class="project-card">
-                <div class="project-info">
-                    <h3 class="project-title">Basics of LLM (Interaktif Eğitim)</h3>
-                    <p class="project-description">
-                        Büyük Dil Modelleri'nin (LLM) temel kavramlarını (Embedding, Tokenization, Attention, RAG) 
-                        interaktif grafikler ve kod örnekleriyle anlatan eğitim platformu.
-                    </p>
-                    <div class="project-tags">
-                        <span class="tag">Python</span>
-                        <span class="tag">Streamlit</span>
-                        <span class="tag">NLP</span>
-                        <span class="tag">AI</span>
-                    </div>
-                    <div class="project-links">
-                        <a href="https://github.com/OmerTurk99/basics-of-llm" target="_blank" class="project-link">
-                            <i class="fab fa-github"></i> GitHub
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Contact Section -->
-    <section id="contact" class="contact section">
-        <div class="section-header reveal">
-            <h2 class="section-title">İletişime <span class="highlight">Geçelim</span></h2>
-            <div class="line"></div>
-        </div>
-        <div class="contact-content reveal-up">
-            <div class="contact-info glass-card">
-                <h3>Her Türlü Soru ve Proje İçin...</h3>
-                <p>Harika fikirlerinize hayat vermek veya bir "Merhaba" demek için formu kullanabilirsiniz. En kısa sürede size dönüş yapacağım.</p>
-                <div class="contact-details">
-                    <div class="contact-item">
-                        <div class="icon-box"><i class="fas fa-envelope"></i></div>
-                        <div>
-                            <h4>Email</h4>
-                            <p>ofarukturk99@gmail.com</p>
-                        </div>
-                    </div>
-                    <div class="contact-item">
-                        <div class="icon-box"><i class="fas fa-map-marker-alt"></i></div>
-                        <div>
-                            <h4>Konum</h4>
-                            <p>İstanbul, Türkiye</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <form class="contact-form glass-card">
-                <div class="form-group">
-                    <input type="text" placeholder="Adınız Soyadınız" required>
-                </div>
-                <div class="form-group">
-                    <input type="email" placeholder="E-posta Adresiniz" required>
-                </div>
-                <div class="form-group">
-                    <textarea placeholder="Mesajınız..." rows="5" required></textarea>
-                </div>
-                <button type="submit" class="btn-primary" style="width: 100%;">Mesaj Gönder</button>
-            </form>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer>
-        <div class="footer-content">
-            <a href="#" class="logo">OFTURK<span>.</span></a>
-            <p>&copy; 2026 ofturk.com.tr. Tüm hakları saklıdır.</p>
-            <div class="social-links">
-                <a href="https://github.com/OmerTurk99" target="_blank"><i class="fab fa-github"></i></a>
-                <a href="https://www.linkedin.com/in/%C3%B6mer-t%C3%BCrk-a1a87732a/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
-            </div>
-        </div>
-    </footer>
-
-    <!-- Scripts -->
-    <script src="script.js"></script>
-</body>
-</html>
+<div class="stars" aria-hidden="true"></div>
+<header class="site-header"><a class="brand" href="#home"><span>✦</span> OFTURK</a><nav><a href="#reading" data-i18n="navReading">Açılım</a><a href="#decks" data-i18n="navDecks">Desteler</a></nav><div class="language-switcher"><button class="language-button active" data-language="tr">TR</button><button class="language-button" data-language="en">EN</button></div></header>
+<div class="ai-loading" id="ai-loading" hidden><div class="loading-orbit">✦</div><p data-i18n="aiLoading">Kartların mesajı okunuyor...</p></div><main>
+<section class="hero" id="home"><div><p class="eyebrow"><i></i><span data-i18n="eyebrow">Kendine ayırdığın bir an</span><i></i></p><h1 data-i18n="heroTitle">Tarotunu Aç.<br><em>İçindeki Hikâyeyi Dinle.</em></h1><p class="hero-description" data-i18n="heroDescription">Kartlarını seç, açılımını belirle ve kartların sana ne anlattığını keşfet.</p><a class="button button-primary" href="#reading"><span data-i18n="startReading">Açılımını başlat</span><b>↗</b></a></div><div class="hero-orbit" aria-hidden="true"><span class="moon">☾</span><span class="orbit-ring"></span><span class="orbit-card card-back"><b>✦</b></span></div></section>
+<section class="section" id="reading"><div class="section-heading"><div><p class="eyebrow"><i></i><span data-i18n="ritual">Ritüelini seç</span></p><h2 data-i18n="chooseSpread">Açılımını Seç</h2></div><p data-i18n="spreadIntro">İçinden gelen soruya en uygun yolu seç.</p></div>
+<div class="deck-picker"><div class="subheading"><span class="step">01</span><div><h3 data-i18n="chooseDeck">Desteni Seç</h3><p data-i18n="deckHint">Kartlarınla bağ kuracağın desteyi seç.</p></div></div><div class="deck-choice-grid" id="deck-choices"></div></div>
+<div class="spread-grid" id="spread-options"></div></section>
+<section class="question-section" id="question-panel" hidden><div class="question-inner"><p class="eyebrow"><i></i><span data-i18n="yourQuestion">Niyetin</span></p><h2 data-i18n="questionTitle">Tarotuna bir soru sor</h2><p data-i18n="questionHint">Bir soruyu kelimelere dökmek, kartların sesini daha net duymanı sağlar.</p><textarea id="question" maxlength="240" data-i18n-placeholder="questionPlaceholder" placeholder="İlişkim nereye gidiyor?" rows="3"></textarea><fieldset class="category-field"><legend data-i18n="categoryTitle">Sorunun türü (opsiyonel)</legend><div id="category-options" class="category-options"></div></fieldset><button class="button button-primary" id="begin-reading"><span data-i18n="enterTable">Masaya geç</span><b>→</b></button></div></section>
+<section class="table-section" id="table-panel" hidden><div class="table-top"><div><p class="eyebrow"><i></i><span data-i18n="yourTable">Tarot masan</span></p><h2 id="table-title"></h2><p id="table-deck" class="table-deck"></p></div><div class="progress-wrap"><strong id="draw-progress">0 / 3</strong><span id="table-status" data-i18n="drawPrompt">Desteden içgüdülerinle bir kart seç.</span></div></div><div class="table-layout"><div class="deck-draw-area"><button class="draw-pile" id="draw-card" aria-label="Draw a card"><span class="card-back"><b>✦</b><small>OFTURK<br>TAROT</small></span></button></div><div class="spread-board" id="spread-board"></div></div><button class="button button-primary reveal-button" id="reveal-reading" disabled><span data-i18n="revealReading">Yorumunu Gör</span><b>→</b></button></section>
+<section class="results-section" id="results-panel" hidden><div class="results-heading"><p class="eyebrow"><i></i><span data-i18n="yourReading">Tarot açılımın</span></p><h2 data-i18n="readingTitle">Kartların ne söylüyor?</h2><p id="result-deck" class="result-deck"></p><p id="result-question" class="result-question"></p></div><div id="reading-cards" class="reading-cards"></div><div class="overall-reading"><p class="eyebrow"><i></i><span data-i18n="overallMessage">Genel Yorum</span></p><p id="overall-text"></p></div><div class="deck-message"><p class="eyebrow"><i></i><span data-i18n="deckMessage">Destenin Mesajı</span></p><p id="advice-text"></p></div><div class="result-actions"><button class="button button-primary" id="new-reading"><span data-i18n="newReading">Yeni Açılım</span><b>↻</b></button><button class="button button-ghost" id="share-reading"><span data-i18n="share">Paylaş</span><b>↗</b></button></div></section>
+<section class="section decks-section" id="decks"><div class="section-heading"><div><p class="eyebrow"><i></i><span data-i18n="shop">OFTURK koleksiyonu</span></p><h2 data-i18n="discoverDecks">Tarot Destelerini Keşfet</h2></div><p data-i18n="deckIntro">Her deste, başka bir bakış açısı.</p></div><div class="deck-grid" id="deck-list"></div></section>
+</main><div class="ai-error" id="ai-error" hidden><p data-i18n="aiError">Yorum şu anda oluşturulamadı. Lütfen tekrar deneyin.</p><button class="button button-primary" id="retry-reading"><span data-i18n="retry">Tekrar Dene</span><b>↻</b></button></div><footer><a class="brand" href="#home"><span>✦</span> OFTURK</a><p data-i18n="footer">İçindeki hikâyeye alan aç.</p><small>© 2026 OFTURK</small></footer><div class="toast" id="toast" role="status" aria-live="polite"></div><script src="api-config.js"></script><script src="script.js"></script>
+</body></html>
